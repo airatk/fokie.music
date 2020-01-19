@@ -1,0 +1,169 @@
+@keyframes spin {
+    to {
+        transform: rotate(var(--vinyl-record-rotation-degree));
+    }
+}
+
+
+@keyframes turn-off {
+    from {
+        transform: rotate(var(--needle-rotation-end));
+        
+        transform-origin-x: var(--needle-center-x-shift);
+        transform-origin-y: var(--needle-center-y-shift);
+    }
+    to {
+        transform: rotate(var(--needle-rotation-start));
+        
+        transform-origin-x: var(--needle-center-x-shift);
+        transform-origin-y: var(--needle-center-y-shift);
+    }
+}
+
+@keyframes turn-on {
+    from {
+        transform: rotate(var(--needle-rotation-start));
+        
+        transform-origin-x: var(--needle-center-x-shift);
+        transform-origin-y: var(--needle-center-y-shift);
+    }
+    to {
+        transform: rotate(var(--needle-rotation-end));
+        
+        transform-origin-x: var(--needle-center-x-shift);
+        transform-origin-x: var(--needle-center-y-shift);
+    }
+}
+
+
+.turn-off {
+    animation-name: turn-off;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.turn-on {
+    animation-name: turn-on;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+.vinyl-player {
+    position: relative;
+    
+    height: 84vh;
+    
+    margin: 8vh;
+}
+
+.vinyl-player > .device {
+    height: 100%;
+    
+    border-radius: 12.5vh;
+    box-shadow: 0 1.2vh 0 #c8c8c8, 0 1.2vh 6vh #282828;
+}
+
+.vinyl-player > .record {
+    position: absolute;
+    top: 8.2%;
+    left: 8.2%;
+    
+    height: 83.6%;
+    
+    animation-name: spin;
+    animation-duration: 42s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.vinyl-player > .needle {
+    position: absolute;
+    top: 9.5%;
+    left: 80.6%;
+    
+    height: 80%;
+}
+
+.vinyl-player > .player-buttons {
+    position: absolute;
+    bottom: 6.5vh;
+    left: 8vh;
+    
+    display: flex;
+}
+
+.vinyl-player > .player-buttons > img {
+    width: 4vh;
+    height: 4vh;
+    
+    margin-right: 1vh;
+}
+
+.vinyl-player > .player-buttons > .stop-button,
+.vinyl-player > .player-buttons > .start-button {
+    cursor: pointer;
+}
+
+.vinyl-player > .player-buttons > .stop-button:hover {
+    content: url("static/images/vinyl-player/buttons/stop-button-hover.png");
+}
+
+.vinyl-player > .player-buttons > .stop-button:active {
+    content: url("static/images/vinyl-player/buttons/stop-button-active.png");
+}
+
+.vinyl-player > .player-buttons > .start-button:hover {
+    content: url("static/images/vinyl-player/buttons/start-button-hover.png");
+}
+
+.vinyl-player > .player-buttons > .start-button:active {
+    content: url("static/images/vinyl-player/buttons/start-button-active.png");
+}
+
+.vinyl-player > .player-buttons > .hint {
+    position: absolute;
+    top: 5.5vh;
+    left: 9vh;
+    
+    width: 15vh;
+    height: 3vh;
+}
+
+
+@media (max-width: 180vh) and (min-width: 96vh) {
+    .vinyl-player {
+        left: 20vw;
+        
+        height: 74vh;
+        
+        margin: 4vh;
+    }
+}
+
+@media (max-width: 148vh) {
+    .vinyl-player > .player-buttons {
+        display: none;
+    }
+}
+
+@media (max-width: 96vh) {
+    .vinyl-player {
+        position: relative;
+        left: 12.5vw;
+        
+        height: 62.5vw;
+        
+        margin: 7vw;
+    }
+    
+    .vinyl-player > .device {
+        border-radius: 10vw;
+    }
+    
+    .vinyl-player > .player-buttons {
+        display: none;
+    }
+}

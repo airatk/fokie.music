@@ -1,0 +1,20 @@
+body {
+    background-color: #421c36;
+}
+
+body > .main {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+    background-image: radial-gradient(circle, #945083 20%, #894071 40%, #421c36 80%);
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 180vh) {
+    body > .main {
+        flex-direction: column;
+    }
+}

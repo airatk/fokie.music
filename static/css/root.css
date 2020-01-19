@@ -1,0 +1,23 @@
+@font-face {
+    src: url("static/fonts/tahoma-bold.ttf");
+    
+    font-family: Tahoma;
+}
+
+
+:root {
+    --vinyl-record-rotation-degree: 360deg;
+    
+    --needle-rotation-start: 0deg;
+    --needle-rotation-end: 13.6deg;
+    
+    --needle-center-x-shift: 25.85%;
+    --needle-center-y-shift: 6.35%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

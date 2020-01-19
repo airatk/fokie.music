@@ -1,0 +1,36 @@
+.name {
+    position: absolute;
+    left: 6vw;
+    z-index: 1;
+    
+    color: #eaeaea;
+    
+    font-family: Tahoma;
+    font-size: 27.5vh;
+    
+    text-shadow: 0 0 0.2em #131313;
+}
+
+.name:hover {
+    cursor: default;
+}
+
+
+@media (max-width: 180vh) and (min-width: 96vh) {
+    .name {
+        bottom: 24vh;
+        
+        font-size: 24vh;
+    }
+}
+
+@media (max-width: 96vh) {
+    .name {
+        top: 28vw;
+        left: -4.5vh;
+        
+        font-size: 18vw;
+        
+        transform: rotate(-90deg);
+    }
+}

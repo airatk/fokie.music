@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:index.html">
+   </FileRef>
+   <Group
+      location = "group:static"
+      name = "static">
+      <Group
+         location = "group:css"
+         name = "css">
+         <FileRef
+            location = "group:root.css">
+         </FileRef>
+         <FileRef
+            location = "group:body.css">
+         </FileRef>
+         <FileRef
+            location = "group:name.css">
+         </FileRef>
+         <FileRef
+            location = "group:vinyl-player.css">
+         </FileRef>
+         <FileRef
+            location = "group:social-buttons.css">
+         </FileRef>
+         <FileRef
+            location = "group:music-services.css">
+         </FileRef>
+         <FileRef
+            location = "group:creator-info.css">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>

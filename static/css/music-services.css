@@ -1,0 +1,92 @@
+.music-services {
+    display: flex;
+    
+    justify-content: center;
+    
+    width: 100vw
+    
+    margin-top: 4.5vh;
+    margin-bottom: 5.5vh;
+    
+    list-style: none;
+}
+
+.music-services > li > a {
+    margin: 0 4vh;
+}
+
+.music-services > li > a:link,
+.music-services > li > a:visited {
+    color: #ccb2c3;
+    
+    font-family: Tahoma;
+    font-size: 5vh;
+    
+    text-shadow: 0 0 0.4em #282828;
+    text-decoration: none;
+    text-align: center;
+}
+
+.music-services > li > a:hover {
+    text-shadow: 0 0 0.6em #000000;
+}
+
+.music-services > li > a:active {
+    text-shadow: none;
+}
+
+.music-services > li > a.itunes:hover {
+    color: change-color(#FC5D71, $lightness: 67.5%);
+}
+
+.music-services > li > a.google-music:hover {
+    color: change-color(#F55129, $lightness: 62.5%);
+}
+
+.music-services > li > a.soundcloud:hover {
+    color: change-color(#F25909, $lightness: 62.5%);
+}
+
+.music-services > li > a.youtube:hover {
+    color: change-color(#BF282A, $lightness: 57.5%);
+}
+
+
+@media (max-width: 180vh) {
+    .music-services > li > a.itunes {
+        color: change-color(#FC5D71, $lightness: 67.5%);
+    }
+    
+    .music-services > li > a.google-music {
+        color: change-color(#F55129, $lightness: 62.5%);
+    }
+    
+    .music-services > li > a.soundcloud {
+        color: change-color(#F25909, $lightness: 62.5%);
+    }
+    
+    .music-services > li > a.youtube {
+        color: change-color(#BF282A, $lightness: 57.5%);
+    }
+}
+
+@media (max-width: 96vh) {
+    .music-services {
+        flex-flow: column;
+        
+        margin: 0;
+        margin-top: -17vh;
+        margin-bottom: 5vh;
+    }
+    
+    .music-services > li > a {
+        display: block;
+        
+        margin: 2.5vh;
+    }
+    
+    .music-services > li > a:hover,
+    .music-services > li > a:active {
+        text-shadow: 0 0 0.4em #282828;
+    }
+}

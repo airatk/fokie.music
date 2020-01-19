@@ -1,0 +1,97 @@
+.social-buttons {
+    position: absolute;
+    left: 76%;
+    
+    padding: 0;
+    
+    list-style: none;
+}
+
+.social-buttons > li {
+    margin: 3.75vh 0;
+}
+
+.social-buttons > li > a:link,
+.social-buttons > li > a:visited {
+    color: #ccb2c3;
+    
+    font-family: Tahoma;
+    font-size: 6vh;
+    
+    text-shadow: 0 0 0.4em #282828;
+    text-decoration: none;
+    
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.social-buttons > li > a:hover {
+    color: white;
+    
+    text-shadow: 0 0 0.6em #000000;
+}
+
+.social-buttons > li > a:active {
+    text-shadow: none;
+}
+
+.social-buttons > li > a.small {
+    display: none;
+}
+
+
+@media (max-width: 180vh) and (min-width: 96vh) {
+    .social-buttons {
+        position: static;
+        
+        margin-top: 5vh;
+        margin-bottom: 6vh;
+    }
+    
+    .social-buttons > li {
+        display: inline;
+        
+        text-align: center;
+        
+        margin: 0 5vh;
+    }
+}
+
+@media (max-width: 96vh) {
+    .social-buttons {
+        position: static;
+        
+        margin-top: 3vh
+        margin-bottom: 20vh;
+    }
+    
+    .social-buttons > li {
+        display: inline;
+        
+        margin: 5vw 2vw;
+    }
+    
+    .social-buttons > li > a {
+        text-align: center;
+    }
+    
+    .social-buttons > li > a:link,
+    .social-buttons > li > a::visited {
+        font-size: 10vw;
+    }
+    
+    .social-buttons > li > a:hover,
+    .social-buttons > li > a:active {
+        color: #ccb2c3;
+        
+        text-shadow: 0 0 0.4em #282828;
+    }
+    
+    .social-buttons > li > a.small {
+        display: unset;
+    }
+
+    .social-buttons > li > a.large {
+        display: none;
+    }
+}

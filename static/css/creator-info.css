@@ -1,0 +1,48 @@
+.creator-info {
+    margin-bottom: 2vh;
+
+    color: #945083;
+    opacity: 0.5;
+    
+    font-family: Tahoma;
+    font-size: 1.8vh;
+    
+    text-align: center;
+}
+
+.creator-info:hover {
+    cursor: default;
+}
+
+.creator-info > .creator-link:link,
+.creator-info > .creator-link:visited {
+    color: #945083;
+    opacity: 0.5;
+    
+    text-decoration: none;
+    
+    transition-duration: .1s;
+    transition-timing-function: ease;
+}
+
+.creator-info > .creator-link:hover {
+    color: #ccb2c3;
+    
+    text-decoration: underline;
+}
+
+.creator-info > .creator-link:active {
+    text-decoration: none;
+}
+
+
+@media (max-width: 96vh) {
+    .creator-info {
+        margin: 0;
+        margin-bottom: 3vh;
+    }
+    
+    .creator-info > .full {
+        display: none;
+    }
+}
