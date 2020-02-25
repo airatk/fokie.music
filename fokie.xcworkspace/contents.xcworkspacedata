@@ -35,5 +35,9 @@
             location = "group:creator-info.css">
          </FileRef>
       </Group>
+      <Group
+         location = "group:/Users/airatk/Documents/alight.software/web/fokie.music/static/js"
+         name = "js">
+      </Group>
    </Group>
 </Workspace>

@@ -2,8 +2,6 @@
     position: absolute;
     left: 76%;
     
-    padding: 0;
-    
     list-style: none;
 }
 
@@ -15,7 +13,7 @@
 .social-buttons > li > a:visited {
     color: #ccb2c3;
     
-    font-family: Tahoma;
+    font-family: "Tahoma";
     font-size: 6vh;
     
     text-shadow: 0 0 0.4em #282828;
@@ -35,7 +33,7 @@
     text-shadow: none;
 }
 
-.social-buttons > li > a.small {
+.social-buttons > li .small {
     display: none;
 }
 
@@ -61,8 +59,7 @@
     .social-buttons {
         position: static;
         
-        margin-top: 3vh
-        margin-bottom: 20vh;
+        margin-top: 9vh;
     }
     
     .social-buttons > li {
@@ -76,7 +73,7 @@
     }
     
     .social-buttons > li > a:link,
-    .social-buttons > li > a::visited {
+    .social-buttons > li > a:visited {
         font-size: 10vw;
     }
     
@@ -87,11 +84,11 @@
         text-shadow: 0 0 0.4em #282828;
     }
     
-    .social-buttons > li > a.small {
-        display: unset;
+    .social-buttons > li .small {
+        display: inline;
     }
 
-    .social-buttons > li > a.large {
+    .social-buttons > li .large {
         display: none;
     }
 }

@@ -5,6 +5,8 @@ body {
 body > .main {
     display: flex;
     
+    
+    
     align-items: center;
     justify-content: center;
     
@@ -16,5 +18,13 @@ body > .main {
 @media (max-width: 180vh) {
     body > .main {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 96vh) {
+    body > .main {
+        height: 70vh;
+        
+        background-position-y: -2vh;
     }
 }

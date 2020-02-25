@@ -2,9 +2,9 @@
     margin-bottom: 2vh;
 
     color: #945083;
-    opacity: 0.5;
+    opacity: 0.6;
     
-    font-family: Tahoma;
+    font-family: "Tahoma";
     font-size: 1.8vh;
     
     text-align: center;
@@ -14,10 +14,9 @@
     cursor: default;
 }
 
-.creator-info > .creator-link:link,
-.creator-info > .creator-link:visited {
+.creator-info > .full > .creator-link:link,
+.creator-info > .full > .creator-link:visited {
     color: #945083;
-    opacity: 0.5;
     
     text-decoration: none;
     
@@ -25,13 +24,13 @@
     transition-timing-function: ease;
 }
 
-.creator-info > .creator-link:hover {
+.creator-info > .full > .creator-link:hover {
     color: #ccb2c3;
     
     text-decoration: underline;
 }
 
-.creator-info > .creator-link:active {
+.creator-info > .full > .creator-link:active {
     text-decoration: none;
 }
 

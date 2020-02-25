@@ -5,7 +5,7 @@
     
     color: #eaeaea;
     
-    font-family: Tahoma;
+    font-family: "Tahoma";
     font-size: 27.5vh;
     
     text-shadow: 0 0 0.2em #131313;
@@ -18,18 +18,18 @@
 
 @media (max-width: 180vh) and (min-width: 96vh) {
     .name {
-        bottom: 24vh;
+        bottom: 22vh;
         
-        font-size: 24vh;
+        font-size: 21vh;
     }
 }
 
 @media (max-width: 96vh) {
     .name {
-        top: 28vw;
+        top: 22.5vh;
         left: -4.5vh;
         
-        font-size: 18vw;
+        font-size: 10.5vh;
         
         transform: rotate(-90deg);
     }

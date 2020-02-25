@@ -8,4 +8,4 @@ _web app for Fokie aka the Internet Residence of Fokie_
 ![desktop](https://github.com/airatk/fokie.music/blob/master/design/screenshots/desktop.png?raw=true)
 
 ## Mobile
-![mobile](https://github.com/airatk/fokie.music/blob/master/design/screenshots/mobile.png?raw=true)
+<img src="https://github.com/airatk/fokie.music/blob/master/design/screenshots/mobile.png?raw=true" width="250" alt="mobile" />

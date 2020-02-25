@@ -1,7 +1,7 @@
 @font-face {
-    src: url("static/fonts/tahoma-bold.ttf");
+    src: url("../fonts/tahoma.ttf");
     
-    font-family: Tahoma;
+    font-family: "Tahoma";
 }
 
 

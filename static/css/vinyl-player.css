@@ -63,7 +63,9 @@
     height: 100%;
     
     border-radius: 12.5vh;
-    box-shadow: 0 1.2vh 0 #c8c8c8, 0 1.2vh 6vh #282828;
+    box-shadow:
+        0 1.2vh 0 #c8c8c8,
+        0 1.2vh 6vh #282828;
 }
 
 .vinyl-player > .record {
@@ -108,19 +110,19 @@
 }
 
 .vinyl-player > .player-buttons > .stop-button:hover {
-    content: url("static/images/vinyl-player/buttons/stop-button-hover.png");
+    content: url("../images/vinyl-player/buttons/stop-button-hover.png");
 }
 
 .vinyl-player > .player-buttons > .stop-button:active {
-    content: url("static/images/vinyl-player/buttons/stop-button-active.png");
+    content: url("../images/vinyl-player/buttons/stop-button-active.png");
 }
 
 .vinyl-player > .player-buttons > .start-button:hover {
-    content: url("static/images/vinyl-player/buttons/start-button-hover.png");
+    content: url("../images/vinyl-player/buttons/start-button-hover.png");
 }
 
 .vinyl-player > .player-buttons > .start-button:active {
-    content: url("static/images/vinyl-player/buttons/start-button-active.png");
+    content: url("../images/vinyl-player/buttons/start-button-active.png");
 }
 
 .vinyl-player > .player-buttons > .hint {
@@ -156,7 +158,7 @@
         
         height: 62.5vw;
         
-        margin: 7vw;
+        margin: 0;
     }
     
     .vinyl-player > .device {
