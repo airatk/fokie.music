@@ -74,7 +74,8 @@
         flex-flow: column;
         
         margin: 0;
-        margin-bottom: 8vh;
+        margin-top: -4vh;
+        margin-bottom: 6vh;
     }
     
     .music-services > li > a {
