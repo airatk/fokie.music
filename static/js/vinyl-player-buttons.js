@@ -6,7 +6,7 @@ const buttons = vinylPlayer.querySelector(".player-buttons");
 const startButton = buttons.querySelector(".start-button");
 const stopButton = buttons.querySelector(".stop-button");
 
-const track = new Audio("/static/music/vox-bag.mp3");
+const track = new Audio("static/music/vox-bag.mp3");
 
 
 track.onended = function() {
