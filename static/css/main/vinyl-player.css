@@ -8,30 +8,18 @@
 @keyframes turn-off {
     from {
         transform: rotate(var(--needle-rotation-end));
-        
-        transform-origin-x: var(--needle-center-x-shift);
-        transform-origin-y: var(--needle-center-y-shift);
     }
     to {
         transform: rotate(var(--needle-rotation-start));
-        
-        transform-origin-x: var(--needle-center-x-shift);
-        transform-origin-y: var(--needle-center-y-shift);
     }
 }
 
 @keyframes turn-on {
     from {
         transform: rotate(var(--needle-rotation-start));
-        
-        transform-origin-x: var(--needle-center-x-shift);
-        transform-origin-y: var(--needle-center-y-shift);
     }
     to {
         transform: rotate(var(--needle-rotation-end));
-        
-        transform-origin-x: var(--needle-center-x-shift);
-        transform-origin-x: var(--needle-center-y-shift);
     }
 }
 
@@ -87,6 +75,9 @@
     left: 80.6%;
     
     height: 80%;
+    
+    transform-origin-x: var(--needle-center-x-shift);
+    transform-origin-y: var(--needle-center-y-shift);
 }
 
 .vinyl-player > .player-buttons {
@@ -110,19 +101,19 @@
 }
 
 .vinyl-player > .player-buttons > .stop-button:hover {
-    content: url("../images/vinyl-player/buttons/stop-button-hover.png");
+    content: url("../../images/vinyl-player/buttons/stop-button-hover.png");
 }
 
 .vinyl-player > .player-buttons > .stop-button:active {
-    content: url("../images/vinyl-player/buttons/stop-button-active.png");
+    content: url("../../images/vinyl-player/buttons/stop-button-active.png");
 }
 
 .vinyl-player > .player-buttons > .start-button:hover {
-    content: url("../images/vinyl-player/buttons/start-button-hover.png");
+    content: url("../../images/vinyl-player/buttons/start-button-hover.png");
 }
 
 .vinyl-player > .player-buttons > .start-button:active {
-    content: url("../images/vinyl-player/buttons/start-button-active.png");
+    content: url("../../images/vinyl-player/buttons/start-button-active.png");
 }
 
 .vinyl-player > .player-buttons > .hint {

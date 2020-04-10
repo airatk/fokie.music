@@ -14,20 +14,24 @@
          location = "group:css"
          name = "css">
          <FileRef
-            location = "group:root.css">
+            location = "group:/Users/airatk/Documents/alight.software/web/fokie.music/static/css/root.css">
          </FileRef>
-         <FileRef
-            location = "group:body.css">
-         </FileRef>
-         <FileRef
-            location = "group:name.css">
-         </FileRef>
-         <FileRef
-            location = "group:vinyl-player.css">
-         </FileRef>
-         <FileRef
-            location = "group:social-buttons.css">
-         </FileRef>
+         <Group
+            location = "group:main"
+            name = "main">
+            <FileRef
+               location = "group:main.css">
+            </FileRef>
+            <FileRef
+               location = "group:/Users/airatk/Documents/alight.software/web/fokie.music/static/css/main/name.css">
+            </FileRef>
+            <FileRef
+               location = "group:/Users/airatk/Documents/alight.software/web/fokie.music/static/css/main/vinyl-player.css">
+            </FileRef>
+            <FileRef
+               location = "group:/Users/airatk/Documents/alight.software/web/fokie.music/static/css/main/social-buttons.css">
+            </FileRef>
+         </Group>
          <FileRef
             location = "group:music-services.css">
          </FileRef>
@@ -38,6 +42,9 @@
       <Group
          location = "group:/Users/airatk/Documents/alight.software/web/fokie.music/static/js"
          name = "js">
+         <FileRef
+            location = "group:vinyl-player-buttons.js">
+         </FileRef>
       </Group>
    </Group>
 </Workspace>
